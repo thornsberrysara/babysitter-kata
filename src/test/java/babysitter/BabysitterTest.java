@@ -33,4 +33,11 @@ public class BabysitterTest {
         assertThat(midnightWage).isEqualTo(16);
     }
 
+    @Test
+    public void totalPayShouldEqual140() {
+        Babysitter underTest = new Babysitter();
+        int totalPay = underTest.calculateTotalPay(17, 28, 22);
+        assertThat(totalPay).isEqualTo(140);
+    }
+
 }

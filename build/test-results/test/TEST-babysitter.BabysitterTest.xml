@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="babysitter.BabysitterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-10-15T04:21:20" hostname="Saras-MBP" time="0.064">
+<testsuite name="babysitter.BabysitterTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-15T15:23:35" hostname="Saras-MBP" time="0.055">
   <properties/>
-  <testcase name="pay12HourlyBeforeBedtime()" classname="babysitter.BabysitterTest" time="0.058"/>
-  <testcase name="pay8HourlyAfterBedtimeAndBeforeMidnight()" classname="babysitter.BabysitterTest" time="0.001"/>
+  <testcase name="pay12HourlyBeforeBedtime()" classname="babysitter.BabysitterTest" time="0.049"/>
+  <testcase name="totalPayShouldEqual140()" classname="babysitter.BabysitterTest" time="0.001"/>
+  <testcase name="pay8HourlyAfterBedtimeAndBeforeMidnight()" classname="babysitter.BabysitterTest" time="0.0"/>
   <testcase name="initializeBabysitterClass()" classname="babysitter.BabysitterTest" time="0.001"/>
   <testcase name="pay16HourlyAfterMidnight()" classname="babysitter.BabysitterTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
