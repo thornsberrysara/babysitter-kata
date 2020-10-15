@@ -3,14 +3,14 @@ package babysitter;
 public class Babysitter {
 
     int beforeBedtimeWage = 12;
-    int beforeBedtimeEarnings;
     int bedtimeWage = 8;
-    int bedtimeEarnings;
     int midnightWage = 16;
+    int beforeBedtimeEarnings;
+    int bedtimeEarnings;
     int midnightEarnings;
     int totalPay;
 
-    public int calculateBeforeBedtimeWage(int startTime, int endTime, int bedtime) {
+    public int calculateBeforeBedtimePay(int startTime, int endTime, int bedtime) {
         if (startTime < bedtime && endTime <= bedtime) {
             return beforeBedtimeEarnings = beforeBedtimeWage * (endTime - startTime);
         } else if (startTime < bedtime && endTime > bedtime) {
@@ -20,7 +20,7 @@ public class Babysitter {
         }
     }
 
-    public int calculateBedtimeWage(int startTime, int endTime, int bedtime) {
+    public int calculateBedtimePay(int startTime, int endTime, int bedtime) {
         if (endTime > bedtime && endTime > 24) {
             return bedtimeEarnings = bedtimeWage * (24 - bedtime);
         } else if (endTime > bedtime && endTime <= 24) {
@@ -30,7 +30,7 @@ public class Babysitter {
         }
     }
 
-    public int calculateMidnightWage(int startTime, int endTime, int bedTime) {
+    public int calculateMidnightPay(int startTime, int endTime, int bedTime) {
         if (endTime > 24) {
             return midnightEarnings = midnightWage * (endTime - 24);
         } else {
@@ -39,9 +39,9 @@ public class Babysitter {
     }
 
     public int calculateTotalPay(int startTime, int endTime, int bedTime) {
-        calculateBeforeBedtimeWage(startTime, endTime, bedTime);
-        calculateBedtimeWage(startTime, endTime, bedTime);
-        calculateMidnightWage(startTime, endTime, bedTime);
+        calculateBeforeBedtimePay(startTime, endTime, bedTime);
+        calculateBedtimePay(startTime, endTime, bedTime);
+        calculateMidnightPay(startTime, endTime, bedTime);
         totalPay = beforeBedtimeEarnings + bedtimeEarnings + midnightEarnings;
         return totalPay;
     }

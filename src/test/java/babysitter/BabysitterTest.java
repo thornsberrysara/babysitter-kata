@@ -15,21 +15,21 @@ public class BabysitterTest {
     @Test
     public void pay12HourlyBeforeBedtime() {
         Babysitter underTest = new Babysitter();
-        int beforeBedtimeWage = underTest.calculateBeforeBedtimeWage(19, 20, 20);
+        int beforeBedtimeWage = underTest.calculateBeforeBedtimePay(19, 20, 20);
         assertThat(beforeBedtimeWage).isEqualTo(12);
     }
 
     @Test
     public void pay8HourlyAfterBedtimeAndBeforeMidnight() {
         Babysitter underTest = new Babysitter();
-        int bedtimeEarnings = underTest.calculateBedtimeWage(20, 21, 20);
+        int bedtimeEarnings = underTest.calculateBedtimePay(20, 21, 20);
         assertThat(bedtimeEarnings).isEqualTo(8);
     }
 
     @Test
     public void pay16HourlyAfterMidnight() {
         Babysitter underTest = new Babysitter();
-        int midnightWage = underTest.calculateMidnightWage(22, 25, 20);
+        int midnightWage = underTest.calculateMidnightPay(22, 25, 20);
         assertThat(midnightWage).isEqualTo(16);
     }
 
