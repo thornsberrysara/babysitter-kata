@@ -23,6 +23,14 @@ public class BabysitterTest {
     public void pay8HourlyAfterBedtimeAndBeforeMidnight() {
         Babysitter underTest = new Babysitter();
         int bedtimeEarnings = underTest.calculateBedtimeWage(20, 21, 20);
+        assertThat(bedtimeEarnings).isEqualTo(8);
+    }
+
+    @Test
+    public void pay16HourlyAfterMidnight() {
+        Babysitter underTest = new Babysitter();
+        int midnightWage = underTest.calculateMidnightWage(22, 25, 20);
+        assertThat(midnightWage).isEqualTo(16);
     }
 
 }

@@ -6,6 +6,8 @@ public class Babysitter {
     int beforeBedtimeEarnings;
     int bedtimeWage = 8;
     int bedtimeEarnings;
+    int midnightWage = 16;
+    int midnightEarnings;
 
     public int calculateBeforeBedtimeWage(int startTime, int endTime, int bedtime) {
         if (startTime < bedtime && endTime <= bedtime) {
@@ -24,6 +26,14 @@ public class Babysitter {
             return bedtimeEarnings = bedtimeWage * (endTime - bedtime);
         } else {
             return bedtimeEarnings = 0;
+        }
+    }
+
+    public int calculateMidnightWage(int startTime, int endTime, int bedTime) {
+        if (endTime > 24) {
+            return midnightEarnings = midnightWage * (endTime - 24);
+        } else {
+            return midnightEarnings = 0;
         }
     }
 }
