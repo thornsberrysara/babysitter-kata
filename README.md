@@ -29,6 +29,9 @@ Between bedtime and midnight, they worked 2 hours, totaling $16.
 From midnight till the ending time, they worked 4 hours, totaling $64.
 So if we add all of that together, the babysitter made $140.
 
+### Running the Code
+This project was created with a Gradle wrapper, meaning you may run it without having Gradle installed.
+
 ### The Struggle
 This kata was pretty straight forward and easy to complete. I realized throughout the process that I should have converted the times better.
 It makes sense in my head, but I realize that 28:00 isn't a real time. To me, it just means 4:00 am. To better understand the code, I've included which number is equal to which time.
