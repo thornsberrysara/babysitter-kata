@@ -19,4 +19,10 @@ public class BabysitterTest {
         assertThat(beforeBedtimeWage).isEqualTo(12);
     }
 
+    @Test
+    public void pay8HourlyAfterBedtimeAndBeforeMidnight() {
+        Babysitter underTest = new Babysitter();
+        int bedtimeEarnings = underTest.calculateBedtimeWage(20, 21, 20);
+    }
+
 }
