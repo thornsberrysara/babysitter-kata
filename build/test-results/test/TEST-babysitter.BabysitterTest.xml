@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="babysitter.BabysitterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-15T04:01:13" hostname="Saras-MBP" time="0.046">
+  <properties/>
+  <testcase name="pay12HourlyBeforeBedtime()" classname="babysitter.BabysitterTest" time="0.046"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
